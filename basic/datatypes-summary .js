@@ -3,7 +3,7 @@
 //  String, Number, Boolean, null(empty), undefined(value not decided yet), Symbol(to make any value unique), BigInt
 
 //  JAVASCRIPT is a dynamically typed language, not a statically typed.
-// This means that variable types are determuned at runtime based on the value assigned to them, and we do not need to explicitly declare the data type of a variable in the code
+// This means that variable types are determined at runtime based on the value assigned to them, and we do not need to explicitly declare the data type of a variable in the code
 
 const score = 100
 const scorevalue = 100.3
@@ -49,3 +49,31 @@ console.log(typeof heros);         // object
 console.log(typeof myFunction);    // function
 
 //  datatype of non primitive is normally object bit of function it is function object
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// STACK(PRIMITIVE)- copy , HEAP(Non-PRIMITIVE)- reference
+
+let myYoutubename = "hiteshchoudharydotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"      // only gets changed in anothername because of stack(primitive datatype)
+
+console.log(myYoutubename);      // hiteshchoudharydotcom
+console.log(anothername);        // chaiaurcode
+
+let userOne = {
+    email: "user@google.com"
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"      // both changes because of heap 
+
+console.log(userOne.email);     // hitesh@google.com
+console.log(userTwo.email);     // hitesh@google.com
+
+
