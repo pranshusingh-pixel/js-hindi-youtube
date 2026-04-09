@@ -19,8 +19,7 @@ console.log(hundreds.toLocaleString('en-IN'));  // 10,00,000 -> allign comma's a
 
 // +++++++++++++++++ MATHS +++++++++++++++++++++++++++++++++++++
 
-console.log(Math);
-console.log("hitesh");
+
 
 
 
